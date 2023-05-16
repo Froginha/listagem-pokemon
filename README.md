@@ -1,6 +1,6 @@
 # Listagem-pokemon
-Projeto feito no evento "SEMANA DO ZERO AO PROGRAMADOR CONTRATADO" realizado pela equipe Dev em Dobro, com algumas edições aplicando design responsivo mais detalhado.
-Mostrando os 151 pokemons da primeira geração e sua descrição
+Projeto feito no evento "SEMANA DO ZERO AO PROGRAMADOR CONTRATADO" realizado pela equipe Dev em Dobro, com algumas edições aplicando design responsivo de forma mais detalhada.
+Expondo os 151 pokemons da primeira geração e sua descrição
 
 <div align="center">
   
