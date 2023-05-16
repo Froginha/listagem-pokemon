@@ -1,0 +1,485 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px ;
+    margin: 0 auto;
+    background-image: url('../img/claro.png');
+    background-repeat: repeat;
+    color: #333333;
+}
+
+body.modo-escuro{
+    background-image: url('../img/escuro.jpg');
+    max-width: 1280px;
+    margin: 0 auto;
+    background-size: contain;
+    background-repeat: repeat;
+    color: #333333;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+header .logo,
+header .imagem-botao{
+    width: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+header .pokemonlogo{
+    width: 150px;
+    transition: 0.2s ease-in-out;
+}
+
+header #botao-alterar-tema{
+    background: none;
+    border: none;
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-pokemon:hover,
+main .cartao-grama:hover,
+main .cartao-fogo:hover,
+main .cartao-agua:hover,
+main .cartao-inseto:hover,
+main .cartao-veneno:hover,
+main .cartao-eletrico:hover,
+main .cartao-terra:hover,
+main .cartao-fada:hover,
+main .cartao-lutador:hover,
+main .cartao-psiquico:hover,
+main .cartao-pedra:hover,
+main .cartao-aco:hover,
+main .cartao-gelo:hover,
+main .cartao-fantasma:hover,
+main .cartao-dragao:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main{
+    padding: 25px;
+}
+
+main .listagem-pokemon{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .cartao-grama{
+    background: linear-gradient(to bottom, #55ad6b 0%, #d8e3ec 100%);
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out; /*efeito suave*/
+}
+
+main .cartao-fogo{
+    background: linear-gradient(to bottom, #d46544 0%, #d8e3ec 100%);
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out; /*efeito suave*/
+}
+
+main .cartao-agua{
+    background: linear-gradient(to bottom, #5380c4 0%, #d8e3ec 100%);
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out; /*efeito suave*/
+}
+
+main .cartao-inseto{
+    background: linear-gradient(to bottom, #c8da66 0%, #d8e3ec 100%);
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out; /*efeito suave*/
+}
+
+main .cartao-pokemon{
+    background: linear-gradient(to bottom, #9c9e8e 0%, #d8e3ec 100%);
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out; /*efeito suave*/
+}
+
+main .cartao-veneno{
+    background: linear-gradient(to bottom, #ad4797 0%, #d8e3ec 100%);
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out; /*efeito suave*/
+}
+
+main .cartao-eletrico{
+    background: linear-gradient(to bottom, #ffd038 0%, #d8e3ec 100%);
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out; /*efeito suave*/
+}
+
+main .cartao-terra{
+    background: linear-gradient(to bottom, #a07e22 0%, #d8e3ec 100%);
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out; /*efeito suave*/
+}
+
+main .cartao-fada{
+    background: linear-gradient(to bottom, #ff83cf 0%, #d8e3ec 100%);
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out; /*efeito suave*/
+}
+
+main .cartao-lutador{
+    background: linear-gradient(to bottom, #e48110 0%, #d8e3ec 100%);
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out; /*efeito suave*/
+}
+
+main .cartao-psiquico{
+    background: linear-gradient(to bottom, #f366b9 0%, #d8e3ec 100%);
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out; /*efeito suave*/
+}
+
+main .cartao-pedra{
+    background: linear-gradient(to bottom, #a38c21 0%, #d8e3ec 100%);
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out; /*efeito suave*/
+}
+
+main .cartao-aco{
+    background: linear-gradient(to bottom, #9eb7b8 0% #d8e3ec 100%);
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out; /*efeito suave*/
+}
+
+main .cartao-gelo{
+    background: linear-gradient(to bottom, #51c4e7 0%, #d8e3ec 100%);
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out; /*efeito suave*/
+}
+
+
+main .cartao-fantasma{
+    background: linear-gradient(to bottom, #7b62a3 0%, #d8e3ec 100%);
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out; /*efeito suave*/
+}
+
+main .cartao-dragao{
+    background: linear-gradient(to bottom, #53a4cf 0%, #f16e57 100%);
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out; /*efeito suave*/
+}
+
+/*main .cartao-pokemon:hover{ 
+    background-color: #96e9d6;
+}*/
+
+.modo-escuro .cartao-pokemon,
+.modo-escuro .cartao-grama,
+.modo-escuro .cartao-fogo,
+.modo-escuro .cartao-agua,
+.modo-escuro .cartao-inseto,
+.modo-escuro .cartao-veneno,
+.modo-escuro .cartao-eletrico,
+.modo-escuro .cartao-terra,
+.modo-escuro .cartao-fada,
+.modo-escuro .cartao-lutador,
+.modo-escuro .cartao-psiquico,
+.modo-escuro .cartao-pedra,
+.modo-escuro .cartao-aco,
+.modo-escuro .cartao-gelo,
+.modo-escuro .cartao-fantasma,
+.modo-escuro .cartao-dragao{
+    background-color: #a8a8a8;
+}
+
+main .cartao-pokemon .informacoes,
+main .cartao-grama .informacoes,
+main .cartao-fogo .informacoes,
+main .cartao-agua .informacoes,
+main .cartao-inseto .informacoes,
+main .cartao-veneno .informacoes,
+main .cartao-eletrico .informacoes,
+main .cartao-terra .informacoes,
+main .cartao-fada .informacoes,
+main .cartao-lutador .informacoes,
+main .cartao-psiquico .informacoes,
+main .cartao-pedra .informacoes,
+main .cartao-aco .informacoes,
+main .cartao-gelo .informacoes,
+main .cartao-fantasma .informacoes,
+main .cartao-dragao .informacoes{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    border: 1px solid #333333
+}
+
+main .cartao-pokemon .informacoes span,
+main .cartao-fogo .informacoes span,
+main .cartao-grama .informacoes span,
+main .cartao-agua .informacoes span,
+main .cartao-inseto .informacoes span,
+main .cartao-veneno .informacoes span,
+main .cartao-eletrico .informacoes span,
+main .cartao-terra .informacoes span,
+main .cartao-fada .informacoes span,
+main .cartao-lutador .informacoes span,
+main .cartao-psiquico .informacoes span,
+main .cartao-pedra .informacoes span,
+main .cartao-aco .informacoes span,
+main .cartao-gelo .informacoes span,
+main .cartao-fantasma .informacoes span,
+main .cartao-dragao .informacoes span{
+    padding: 5px; 
+    text-transform: uppercase; /*todas ficam maiusculas*/
+    font-size: 17px;
+}
+
+main .cartao-pokemon .gif,
+main .cartao-grama .gif,
+main .cartao-fogo .gif,
+main .cartao-agua .gif,
+main .cartao-inseto .gif,
+main .cartao-veneno .gif,
+main .cartao-eletrico .gif,
+main .cartao-terra .gif,
+main .cartao-fada .gif,
+main .cartao-lutador .gif,
+main .cartao-psiquico .gif,
+main .cartao-pedra .gif,
+main .cartao-aco .gif,
+main .cartao-gelo .gif,
+main .cartao-fantasma .gif,
+main .cartao-dragao .gif{
+    width: 75px;
+    height: 75px;
+}
+
+main .cartao-pokemon .tipos,
+main .cartao-grama .tipos,
+main .cartao-fogo .tipos,
+main .cartao-agua .tipos,
+main .cartao-inseto .tipos,
+main .cartao-veneno .tipos,
+main .cartao-eletrico .tipos,
+main .cartao-terra .tipos,
+main .cartao-fada .tipos,
+main .cartao-lutador .tipos,
+main .cartao-psiquico .tipos,
+main .cartao-pedra .tipos,
+main .cartao-aco .tipos,
+main .cartao-gelo .tipos,
+main .cartao-fantasma .tipos,
+main .cartao-dragao .tipos{
+    display: flex;
+    gap: 15px;
+}
+
+main .cartao-pokemon .tipo,
+main .cartao-grama .tipo,
+main .cartao-fogo .tipo,
+main .cartao-agua .tipo,
+main .cartao-inseto .tipo,
+main .cartao-veneno .tipo,
+main .cartao-eletrico .tipo,
+main .cartao-terra .tipo,
+main .cartao-fada .tipo,
+main .cartao-lutador .tipo,
+main .cartao-psiquico .tipo,
+main .cartao-pedra .tipo,
+main .cartao-aco .tipo,
+main .cartao-gelo .tipo,
+main .cartao-fantasma .tipo,
+main .cartao-dragao .tipo{
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.grama{
+    background-color: #7ac74c;
+}
+
+.veneno{
+    background-color: #b161affb;
+}
+
+.Fogo{
+    background-color: #ee8130;
+}
+
+.agua{
+    background-color: #6390f0;
+}
+
+.inseto{
+    background-color: #a6b91a;
+}
+
+.normal{
+    background-color: rgb(165, 165, 165)
+}
+
+.voador{
+    background: linear-gradient(
+    to top,
+    rgb(165, 165, 165) 0%,
+    rgb(165, 165, 165) 50%,
+    rgb(110, 173, 255) 50%,
+    rgb(110, 173, 225) 100%
+    )
+}
+
+.eletrico{
+    background-color: #ffd000;
+}
+
+.terra{
+    background: linear-gradient(
+        to top,
+        #f7de3f 0%,
+        #f7de3f 50%,
+        #ab9842 50%,
+        #ab9842 100%
+    )
+}
+
+.fada{
+    background-color: #ff9cba;
+}
+
+.lutador{
+    background-color: #d56723;
+}
+
+.psiquico{
+    background-color: #f366b9;
+}
+
+.pedra{
+    background-color: #a38c21;
+}
+
+.aco{
+    background-color: #9eb7b8;
+}
+
+.gelo{
+    background-color: #51c4e7;
+}
+
+.fantasma{
+    background-color: #7b62a3;
+}
+
+.dragao{
+    background: linear-gradient(
+        to top,
+        #f16e57 0%,
+        #f16e57 50%,
+        #53a4cf 50%,
+        #53a4cf 100%
+    )
+}
+
+main .descricao{
+    max-height: 80px;
+    overflow-y: scroll; /*para conteudo transbordadndo*/
+    font-size: 14px;
+    padding-right: 10px;
+}
+
